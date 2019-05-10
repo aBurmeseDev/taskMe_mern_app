@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "npm start --prefix client-app"
+    "react-app": "npm start --prefix react-app",
+    "dev": "concurrently \"npm run server\" \"npm run react-app\""
   },
   "author": "John Lwin",
   "license": "ISC",
